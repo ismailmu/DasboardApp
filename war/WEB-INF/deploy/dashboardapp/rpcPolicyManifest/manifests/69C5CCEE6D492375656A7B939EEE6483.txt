@@ -1,0 +1,2 @@
+serviceClass: com.btpns.Dashboard.client.service.snapshot.SnapshotService
+path: F5D2927673109629EA81A1A319A6116D.gwt.rpc

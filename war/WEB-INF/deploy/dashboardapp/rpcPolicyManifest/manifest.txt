@@ -1,0 +1,10 @@
+# Module dashboardapp
+# RPC service class, partial path of RPC policy file
+com.btpns.Dashboard.client.service.ftp.FtpService, 5BECA01A99024F760DA37CD73D637457.gwt.rpc
+com.btpns.Dashboard.client.service.helpdesk.HelpdeskService, C167DF2BE0B9465DA5E377B58724980E.gwt.rpc
+com.btpns.Dashboard.client.service.wisma.WismaService, C214BFC59FB65DB35008A16D5A2D7A41.gwt.rpc
+com.btpns.Dashboard.client.service.snapshot.SnapshotService, F5D2927673109629EA81A1A319A6116D.gwt.rpc
+com.btpns.Dashboard.client.service.menu.MenuService, E25753C9D5CE3DA71C2CCA011EFBC24C.gwt.rpc
+com.btpns.Dashboard.client.service.dtur.DturService, 913ADF5DF1E54914F350AB9086900B5D.gwt.rpc
+com.btpns.Dashboard.client.service.eod.EodService, E4ECDC91A5B5C56AB453ECBCCE3FF966.gwt.rpc
+com.btpns.Dashboard.client.service.home.HomeService, 33D2F88DA59CB2A60C7C7B00FA1C0615.gwt.rpc

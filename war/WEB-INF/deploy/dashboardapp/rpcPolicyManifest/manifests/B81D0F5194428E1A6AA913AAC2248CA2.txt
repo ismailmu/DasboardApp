@@ -1,0 +1,2 @@
+serviceClass: com.btpns.Dashboard.client.service.eod.EodService
+path: E4ECDC91A5B5C56AB453ECBCCE3FF966.gwt.rpc

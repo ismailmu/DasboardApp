@@ -1,0 +1,2 @@
+serviceClass: com.btpns.Dashboard.client.service.ftp.FtpService
+path: 5BECA01A99024F760DA37CD73D637457.gwt.rpc

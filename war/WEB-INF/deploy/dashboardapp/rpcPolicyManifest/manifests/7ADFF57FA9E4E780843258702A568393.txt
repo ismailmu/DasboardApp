@@ -1,0 +1,2 @@
+serviceClass: com.btpns.Dashboard.client.service.menu.MenuService
+path: E25753C9D5CE3DA71C2CCA011EFBC24C.gwt.rpc

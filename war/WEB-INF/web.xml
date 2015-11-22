@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5" xmlns="http://java.sun.com/xml/ns/javaee">
+
+	<!-- listeners -->
+	<listener>
+		<description>contextListener</description>
+		<listener-class>com.btpns.Dashboard.server.DashboardContextListener</listener-class>
+	</listener>
+
+	<!-- servlets -->
+	<servlet>
+		<servlet-name>eodServlet</servlet-name>
+		<servlet-class>com.btpns.Dashboard.server.eod.EodServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>eodServlet</servlet-name>
+		<url-pattern>/dashboardapp/eodService</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ftpServlet</servlet-name>
+		<servlet-class>com.btpns.Dashboard.server.ftp.FtpServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ftpServlet</servlet-name>
+		<url-pattern>/dashboardapp/ftpService</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>helpdeskServlet</servlet-name>
+		<servlet-class>com.btpns.Dashboard.server.helpdesk.HelpdeskServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>helpdeskServlet</servlet-name>
+		<url-pattern>/dashboardapp/helpdeskService</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>snapshotServlet</servlet-name>
+		<servlet-class>com.btpns.Dashboard.server.snapshot.SnapshotServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>snapshotServlet</servlet-name>
+		<url-pattern>/dashboardapp/snapshotService</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>wismaServlet</servlet-name>
+		<servlet-class>com.btpns.Dashboard.server.wisma.WismaServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>wismaServlet</servlet-name>
+		<url-pattern>/dashboardapp/wismaService</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>homeServlet</servlet-name>
+		<servlet-class>com.btpns.Dashboard.server.home.HomeServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>homeServlet</servlet-name>
+		<url-pattern>/dashboardapp/homeService</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>dturServlet</servlet-name>
+		<servlet-class>com.btpns.Dashboard.server.dtur.DturServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>dturServlet</servlet-name>
+		<url-pattern>/dashboardapp/dturService</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>menuServlet</servlet-name>
+		<servlet-class>com.btpns.Dashboard.server.menu.MenuServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>menuServlet</servlet-name>
+		<url-pattern>/dashboardapp/menuService</url-pattern>
+	</servlet-mapping>
+	
+
+	<session-config>
+		<session-timeout>15</session-timeout>
+	</session-config>
+
+	<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>DashboardApp.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>

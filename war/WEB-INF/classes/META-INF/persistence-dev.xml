@@ -1,0 +1,48 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+	version="1.0">
+
+	<persistence-unit name="dashboardHibernate">
+		<class>com.btpns.Dashboard.server.home.EodHomeSummaryModel</class>
+		<class>com.btpns.Dashboard.server.home.FtpHomeSummaryModel</class>
+		<class>com.btpns.Dashboard.server.home.HelpdeskHomeSummaryModel</class>
+		<class>com.btpns.Dashboard.server.home.PortfolioHomeSummaryModel</class>
+		<class>com.btpns.Dashboard.server.eod.EodDailyDetailModel</class>
+		<class>com.btpns.Dashboard.server.eod.EodDurationModel</class>
+		<class>com.btpns.Dashboard.server.ftp.FtpChartTrxModel</class>
+		<class>com.btpns.Dashboard.server.ftp.FtpFailureDetailModel</class>
+		<class>com.btpns.Dashboard.server.helpdesk.HelpdeskDailyModel</class>
+		<class>com.btpns.Dashboard.server.snapshot.SnapshotWismaDetailModel</class>
+		<class>com.btpns.Dashboard.server.snapshot.SnapshotDailyDetailModel</class>
+		<class>com.btpns.Dashboard.server.wisma.WismaModel</class>
+		<class>com.btpns.Dashboard.server.wisma.WismaEmployeeModel</class>
+		<class>com.btpns.Dashboard.server.dtur.DturEtlSummaryModel</class>
+		<class>com.btpns.Dashboard.server.dtur.DturEtlDetailModel</class>
+		<class>com.btpns.Dashboard.server.menu.MenuToolbarModel</class>
+		
+		<properties>
+<!-- 			<property name="hibernate.hbm2ddl.auto" value="create" /> -->
+<!-- 			<property name="hibernate.archive.autodetection" value="class, hbm" /> -->
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+			<property name="hibernate.connection.username" value="simpled" />
+			<property name="hibernate.connection.password" value="simpledP@ssword" />
+			<property name="hibernate.connection.url" value="jdbc:mysql://10.2.72.149:3306/simpled?autoReconnect=true" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+			<property name="javax.persistence.validation.mode" value="none"/>
+			
+			<!-- configuration pool via c3p0-->
+	        <!-- Important -->
+        	<property name="hibernate.connection.provider_class" value="org.hibernate.connection.C3P0ConnectionProvider" />
+        	
+        	<property name="hibernate.c3p0.max_size" value="200" />
+        	<property name="hibernate.c3p0.min_size" value="10" />
+        	<property name="hibernate.c3p0.acquire_increment" value="3" />
+        	<property name="hibernate.c3p0.idle_test_period" value="300" />
+        	<property name="hibernate.c3p0.max_statements" value="0" />
+        	<property name="hibernate.c3p0.timeout" value="100" />
+		</properties>
+	</persistence-unit>
+</persistence>

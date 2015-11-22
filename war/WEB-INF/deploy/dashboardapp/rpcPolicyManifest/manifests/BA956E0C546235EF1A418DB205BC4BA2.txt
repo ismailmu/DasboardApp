@@ -1,0 +1,2 @@
+serviceClass: com.btpns.Dashboard.client.service.home.HomeService
+path: 33D2F88DA59CB2A60C7C7B00FA1C0615.gwt.rpc

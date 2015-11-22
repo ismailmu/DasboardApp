@@ -1,0 +1,2 @@
+serviceClass: com.btpns.Dashboard.client.service.dtur.DturService
+path: 913ADF5DF1E54914F350AB9086900B5D.gwt.rpc

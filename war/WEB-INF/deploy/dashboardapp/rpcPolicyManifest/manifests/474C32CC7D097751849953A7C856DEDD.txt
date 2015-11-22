@@ -1,0 +1,2 @@
+serviceClass: com.btpns.Dashboard.client.service.helpdesk.HelpdeskService
+path: C167DF2BE0B9465DA5E377B58724980E.gwt.rpc

@@ -1,0 +1,2 @@
+serviceClass: com.btpns.Dashboard.client.service.wisma.WismaService
+path: C214BFC59FB65DB35008A16D5A2D7A41.gwt.rpc
